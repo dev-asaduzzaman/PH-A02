@@ -76,6 +76,15 @@ img {
   width: 35%;
   top: -120px;
   right: 0;
+  animation: spin 10s infinite ease-in-out;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 /* -------------- Promo Section start here -------------------- */
 #promo {
@@ -121,50 +130,86 @@ img {
   text-align: center;
   padding: 1rem;
 }
-/*  */
+/*--------------------Newslatter Css Start Here ---------------  */
 #newlatter {
-    position: relative;
-    background-image: url('./assets/news-letter-bg.png'); 
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
-    position: relative;
-    padding: 0 20px;
+  position: relative;
+  padding: 0 20px;
 }
-.newlatter-heading{
+.newlatter-heading {
   font-size: 3.1rem;
 }
 .input-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .email-input {
-    padding: 10px 12px;
-    font-size: 1rem;
-    background-color:  #ffffff;
-    width: 650px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  width: 650px;
 }
 
 .subscribe-btn {
-    padding: 10px 15px;
-    font-size: 1rem;
-    background-color: #f97316; 
-    color: white;
-    border: none;
-    cursor: pointer;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .subscribe-btn:hover {
-    background-color: #ea580c;}
+  background-color: #ea580c;
+}
 
+/*--------------------Footer Css Start Here ---------------  */
+.footer-logo-area img {
+  width: 40%;
+}
+.footer-main-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-items: start;
+  text-align: left;
+}
+
+.footer-text {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.footer-links a {
+  margin-right: 1.5rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #2563eb;
+}
+.social-icons img {
+  width: 15%;
+}
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
 /* ------------------Media Queries Start here ----------------- */
 @media only screen and (max-width: 768px) {
   .desktop-nav {
@@ -193,7 +238,7 @@ img {
   .plant-heading,
   .pl-main-heading,
   .promo-heading,
-  .newlatter-heading{
+  .newlatter-heading {
     font-size: 1.5rem;
     margin-top: 20px;
   }
@@ -224,7 +269,15 @@ img {
   .email-input {
     padding: 10px 12px;
     font-size: 1rem;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     width: 200px;
+  }
+  .footer-main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: start;
+  text-align: left;
 }
+
 }
