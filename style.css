@@ -11,10 +11,16 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+img{
+  width: 100%;
+}
 .banner-heading{
-    font-size: 64px;
+    font-size: 4rem;
 }
 /* ------------Header CSS start Here----------- */
+.cart-image{
+  width: 20%;
+}
 .banner-content{
   width: 50%;
 }
@@ -32,7 +38,22 @@ body {
 .mobile-menu {
   display: none;
 }
-
+/* -------------Plant Css Start Here ----------------- */
+.plant-heading{
+  font-size: 3.1rem;
+}
+.plant-item{
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card{
+  text-align: center;
+}
+.card-btn {
+    width: 100%;
+    padding: 10px;
+}
 /* ------------------Media Queries Start here ----------------- */
 @media only screen and (max-width: 768px) {
   .desktop-nav{
@@ -57,8 +78,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.banner-heading{
-  font-size: 24px;
+.banner-heading,
+.plant-heading{
+  font-size: 1.5rem;
 }
-
+.plant-item{
+  display: grid ;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 }
