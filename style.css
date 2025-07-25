@@ -5,6 +5,7 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+    background-color: #f5f8ff;
     }
     .inter {
   font-family: "Inter", sans-serif;
@@ -17,6 +18,7 @@ img{
 .banner-heading{
     font-size: 4rem;
 }
+
 /* ------------Header CSS start Here----------- */
 .cart-image{
   width: 20%;
@@ -54,6 +56,28 @@ img{
     width: 100%;
     padding: 10px;
 }
+/* ---------------PLant Lover Css Start Here ------------- */
+.pl-container{
+  grid-template-columns: 1fr 1fr;
+}
+.pl-main-image{
+  width: 90%;
+}
+.pl-main-heading{
+  font-size: 3.5rem;
+}
+.pl-content li span{
+  font-size: 1.2rem;
+}
+.pl-content li p{
+  font-size: 1.2rem;
+ font-family: "Inter", sans-serif;
+}
+.trust-image{
+  width: 35%;
+  top: -120px;
+  right: 0;
+}
 /* ------------------Media Queries Start here ----------------- */
 @media only screen and (max-width: 768px) {
   .desktop-nav{
@@ -79,12 +103,26 @@ img{
   align-items: center;
 }
 .banner-heading,
-.plant-heading{
+.plant-heading,
+.pl-main-heading{
   font-size: 1.5rem;
+  margin-top: 20px;
+}
+.pl-main-image{
+  width: 100%;
+}
+.trust-image{
+ display: none;
 }
 .plant-item{
   display: grid ;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+.pl-container{
+  grid-template-columns: 1fr;
+}
+.pl-content li p{
+  font-size: 1rem;
 }
 }
