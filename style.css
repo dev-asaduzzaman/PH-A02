@@ -32,4 +32,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.banner{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
 }
