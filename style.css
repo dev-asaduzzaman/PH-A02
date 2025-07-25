@@ -16,3 +16,20 @@ body {
     margin-right: 45px;
     font-family: "Inter", sans-serif;
 }
+
+.mobile-menu {
+  display: none;
+}
+
+/* ------------------Media Queries Start here ----------------- */
+@media only screen and (max-width: 726px) {
+  .desktop-nav{
+    display: none;
+  }
+  .mobile-menu {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+}
